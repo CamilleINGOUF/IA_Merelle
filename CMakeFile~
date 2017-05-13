@@ -1,0 +1,21 @@
+CMAKE_MINIMUM_REQUIRED( VERSION 3.0 )
+project( chifoumi )
+set( CMAKE_CXX_STANDARD 14)
+
+set( CMAKE_CXX_FLAGS "-Wall -Wextra -std=c++14 ${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations")
+
+find_package( PkgConfig REQUIRED )
+pkg_check_modules( Pkg
+  REQUIRED libglog cpputest )
+INCLUDE_DIRECTORIES( ${Pkg_INCLUDE_DIRS} )
+
+ADD_EXECUTABLE( chifoumi.out
+  src/main_chifoumi.cpp
+  src/chifoumi.cpp)
+TARGET_LINK_LIBRARIES( chifoumi.out ${Pkg_LIBRARIES} )
+
+add_executable( main_test.out
+  src/main_test.cpp 
+  src/chifoumi_test.cpp
+  src/chifoumi.cpp)
+target_link_libraries( main_test.out ${Pkg_LIBRARIES} )

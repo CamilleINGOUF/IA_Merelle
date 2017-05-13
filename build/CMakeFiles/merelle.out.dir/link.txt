@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -Wextra -std=c++14  -Wno-deprecated-declarations   CMakeFiles/merelle.out.dir/src/merelle.cpp.o CMakeFiles/merelle.out.dir/src/move.cpp.o CMakeFiles/merelle.out.dir/src/position.cpp.o  -o merelle.out -rdynamic -lglog -lstdc++ -lCppUTest -lCppUTestExt 

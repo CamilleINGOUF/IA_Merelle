@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mylienos/L3/IA/alpha_beta/src/merelle.cpp
+position.hpp
+/home/mylienos/L3/IA/alpha_beta/src/position.hpp
+
+/home/mylienos/L3/IA/alpha_beta/src/move.cpp
+vector
+-
+iostream
+-
+algorithm
+-
+cstdlib
+-
+ctime
+-
+
+/home/mylienos/L3/IA/alpha_beta/src/position.cpp
+position.hpp
+/home/mylienos/L3/IA/alpha_beta/src/position.hpp
+
+/home/mylienos/L3/IA/alpha_beta/src/position.hpp
+vector
+-
+iostream
+-
+algorithm
+-
+cstdlib
+-
+ctime
+-
+move.cpp
+/home/mylienos/L3/IA/alpha_beta/src/move.cpp
+
